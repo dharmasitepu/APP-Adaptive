@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:icon="@drawable/refresh" android:enabled="true" android:id="@id/page_1" android:title="Home" />
+	<item android:icon="@drawable/refresh" android:enabled="true" android:id="@id/page_2" android:title="Profile" />
+	<item android:icon="@drawable/refresh" android:enabled="true" android:id="@id/page_3" android:title="Logout" />
+</menu>

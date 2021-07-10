@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/pullToRefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+		<RelativeLayout android:id="@id/adParent" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+		<RelativeLayout android:id="@id/noInternet" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+				<ImageView android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/no_internet" />
+				<TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_internet" />
+			</LinearLayout>
+		</RelativeLayout>
+		<RelativeLayout android:id="@id/gifAnim" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<ImageView android:id="@id/gifAnimImg" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@drawable/no_internet" android:layout_centerInParent="true" />
+		</RelativeLayout>
+	</RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
